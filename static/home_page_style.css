@@ -1,0 +1,14 @@
+body {
+    background-image: url("https://cdn.woorise.com/wp-content/uploads/2020/08/download-free-images.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 540px
+}

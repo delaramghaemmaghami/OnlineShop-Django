@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Goods</title>
+</head>
+<body>
+    {% for good in good_list %}
+    <ul>
+        <li>{{good.name}}</li>
+        <li>{{good.price}}</li>
+        <li>{{good.image}}</li>
+    </ul>
+    {% endfor %}
+</body>
+</html>
