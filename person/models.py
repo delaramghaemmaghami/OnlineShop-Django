@@ -22,7 +22,9 @@ class Good(models.Model):
     def get_upload_path(self, filename):
         ext = filename.split(".")[-1]
         filename = f"{self.name}.{ext}"
+
         path = f"images/goods/"
+
         return os.path.join(path, filename)
 
     name = models.CharField(max_length=100, blank=False)
