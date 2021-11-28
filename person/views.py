@@ -11,3 +11,7 @@ class AllGoods(ListView):
     model = Good
     template_name = "goods_list.html"
 
+
+class AllStores(ListView):
+    model = Store
+    template_name = "store_list.html"
