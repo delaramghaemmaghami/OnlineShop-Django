@@ -4,7 +4,8 @@ from django.db import models
 from colorfield.fields import ColorField
 from django.core.validators import RegexValidator
 
-PHONE_REGEX = RegexValidator("09(1[0-9]|3[1-9]|2[1-9])-?[0-9]{3}-?[0-9]{4}")
+PHONE_REGEX = RegexValidator("09(1[0-9]|3[1-9]|2[1-9])-?[0-9]{3}-?[0-9]{4}",
+                             message="Please enter a valid phone number!")
 
 
 class Store(models.Model):
