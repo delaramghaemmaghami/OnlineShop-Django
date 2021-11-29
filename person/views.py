@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from django.views.generic import TemplateView, ListView, DetailView
 from .models import *
 
@@ -15,3 +14,8 @@ class AllGoods(ListView):
 class AllStores(ListView):
     model = Store
     template_name = "store_list.html"
+
+
+class GoodsDetails(DetailView):
+    model = Good
+    template_name = "person/good_detail.html"
