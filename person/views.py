@@ -19,3 +19,8 @@ class AllStores(ListView):
 class GoodsDetails(DetailView):
     model = Good
     template_name = "person/good_detail.html"
+
+
+class StoresDetails(DetailView):
+    model = Store
+    template_name = "person/store_detail.html"
