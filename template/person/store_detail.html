@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}
+    <title>STORE DETAILS</title>
+{% endblock %}
+
+{% block content %}
+    <div class="container mt-5">
+        <table class="table table-striped">
+            <thead class="bg-warning">
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Phone</th>
+                    <th scope="col">Location</th>
+                    <th scope="col">About Store</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>{{store.name}}</th>
+                    <th>{{store.phone}}</th>
+                    <th>{{store.location}}</th>
+                    <th>{{store.about_store}}</th>
+                    <th>
+                        <a href="{% url 'AllStores' %}" class="btn btn-dark">Back</a>
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+{% endblock %}
