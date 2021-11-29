@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}
+    <title>GOOD DETAILS</title>
+{% endblock %}
+
+{% block content %}
+    <div class="container mt-5">
+        <table class="table table-striped">
+            <thead class="bg-warning">
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Image</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Color</th>
+                    <th scope="col">FactoryDate</th>
+                    <th scope="col">StoreName</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>{{good.name}}</th>
+                    <th><img src="{{good.image.url}}" alt="" width="100" height="100"></th>
+                    <th>{{good.price}}</th>
+                    <th>{{good.color}}</th>
+                    <th>{{good.factory_date}}</th>
+                    <th>{{good.store_name}}</th>
+                    <th>
+                        <a href="{% url 'AllGoods' %}" class="btn btn-dark">Back</a>
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+{% endblock %}
