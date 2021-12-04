@@ -24,3 +24,8 @@ class GoodsDetails(DetailView):
 class StoresDetails(DetailView):
     model = Store
     template_name = "person/store_detail.html"
+
+
+class StoreGoods(ListView):
+    model = Good
+    template_name = "goods_list.html"

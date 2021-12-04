@@ -13,7 +13,8 @@
                   <th scope="col">Name</th>
                   <th scope="col">Phone</th>
                   <th scope="col">Location</th>
-                  <th scope="col">Action</th>
+                  <th scope="col">Action One</th>
+                  <th scope="col">Action Two</th>
                 </tr>
             </thead>
             <tbody>
@@ -24,6 +25,7 @@
                     <th >{{store.phone}}</th>
                     <th >{{store.location}}</th>
                     <th><a href="{% url 'StoreDetails' store.pk %}" class="btn btn-dark">Details</a></th>
+                    <th><a href="{% url 'StoreDetails' store.pk %}" class="btn btn-danger">Goods</a></th>
                 </tr>
                 {% endfor %}
             </tbody>
